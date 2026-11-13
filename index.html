@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liga D91: torneos, resultados y estadísticas de fútbol virtual.">
+    <title>Liga D91 | Fútbol virtual</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="js/datos.js" defer></script>
+    <script src="js/posiciones.js" defer></script>
+    <script src="js/interfaz.js" defer></script>
+</head>
+<body>
+    <header class="encabezado">
+        <a class="logo" href="index.html">
+        <img src="img/logo-d91.png" alt="Liga D91">
+        </a>
+
+        <nav class="navegacion">
+            <a href="#resultados">Resultados</a>
+            <a href="#posiciones">Posiciones</a>
+            <a href="prensa.html">Prensa</a>
+            <a href="#torneos">Torneos</a>
+            <a href="palmares.html">Palmares</a>
+            <a href="#participantes">Equipos</a>
+            
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="seccion resultados" id="resultados">
+        <p class="etiqueta">FECHAS Y PARTIDOS ACTUALES</p>
+        <h2>FIXTURE Y RESULTADOS</h2>
+
+        <div id="listaPartidos">
+        <p class="mensaje">Cargando partidos...</p>
+        </div>
+        </section>
+        <section class="seccion" id="torneos">
+            <p class="etiqueta">TORNEOS ACTIVOS</p>
+            <h2>COMPETICIONES</h2>
+
+            <div class="tarjetas" id="listaTorneos">
+                <p class="mensaje">Cargando competiciones...</p>
+            </div>
+        </section>
+
+        <section class="seccion participantes" id="participantes">
+    <p class="etiqueta">PARTICIPANTES DEL TORNEO</p>
+    <h2>EQUIPOS</h2>
+
+    <div class="grupo">
+        <h3>GRUPO A</h3>
+        <div class="listaEquipos" id="grupoA">
+            <p class="mensaje">Cargando equipos...</p>
+        </div>
+    </div>
+
+    <div class="grupo">
+        <h3>GRUPO B</h3>
+        <div class="listaEquipos" id="grupoB">
+            <p class="mensaje">Cargando equipos...</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="seccion posiciones" id="posiciones">
+    <p class="etiqueta">FASE DE GRUPOS</p>
+    <h2>TABLAS DE POSICIONES</h2>
+
+    <div class="grupo">
+        <h3>GRUPO A</h3>
+        <div class="tablaContenedor" id="tablaGrupoA">
+            <p class="mensaje">Cargando posiciones...</p>
+        </div>
+    </div>
+
+    <div class="grupo">
+        <h3>GRUPO B</h3>
+        <div class="tablaContenedor" id="tablaGrupoB">
+            <p class="mensaje">Cargando posiciones...</p>
+        </div>
+    </div>
+</section>
+
+<section class="seccion goleadores" id="goleadores">
+    <p class="etiqueta">MAXIMOS ANOTADOORES DEL TORNEO</p>
+    <h2>GOLEADORES</h2>
+
+    <div class="tablaScroll">
+        <table class="tablaGoleadores">
+            <thead>
+                <tr>
+                    <th>POS.</th>
+                    <th>JUGADOR</th>
+                    <th>GOLES</th>
+                </tr>
+            </thead>
+
+            <tbody id="listaGoleadores">
+                <tr>
+                    <td colspan="3" class="mensaje">
+                        Cargando goleadores...
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+    </main>
+
+<a href="#" class="volverArriba" aria-label="Volver al inicio">
+    <i class="fa-solid fa-arrow-up"></i>
+</a> 
+<footer class="piePagina">
+    <div class="contenidoPie">
+
+        <!-- LIGA D91 -->
+        <div class="columnaPie">
+            <h3>LIGA <span>D91</span></h3>
+            <p>© Liga D91 · DamianRojo91</p>
+
+            <div class="redesPie">
+                <a href="https://www.twitch.tv/damianrojo91" target="_blank" rel="noopener noreferrer" aria-label="Twitch">
+                    <i class="fa-brands fa-twitch"></i>
+                </a>
+                <a href="https://www.instagram.com/damianrojo91_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@damianrojo91" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com/@damianrojo91" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://discord.com/invite/DBqyMru6EB" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+                <a href="https://x.com/Damianrojo91_" target="_blank" rel="noopener noreferrer" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- APOYO -->
+        <div class="columnaPie apoyoPie">
+            <h3>APOYÁ A LA LIGA</h3>
+            <p>Tu colaboración ayuda a mantener viva la comunidad.</p>
+
+            <a href="img/qr.png" target="_blank" rel="noopener noreferrer">
+                <img src="img/qr.png" alt="QR para colaborar con Liga D91">
+            </a>
+
+            <span>ESCANEÁ Y COLABORÁ</span>
+        </div>
+
+        <!-- DESARROLLO -->
+        <div class="columnaPie">
+            <h3>DESARROLLO WEB</h3>
+            <p class="creditoPie">BelialJose</p>
+
+            <div class="redesPie">
+                <a href="https://www.twitch.tv/belialjose_" target="_blank" rel="noopener noreferrer" aria-label="Twitch">
+                    <i class="fa-brands fa-twitch"></i>
+                </a>
+                <a href="https://www.instagram.com/belialjose_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@belialjose_" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.youtube.com/@belialjose_" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://x.com/belialjose_" target="_blank" rel="noopener noreferrer" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="pieInferior">
+        <p>LIGA D91</p>
+    </div>
+</footer>
+</body>
+</html>
